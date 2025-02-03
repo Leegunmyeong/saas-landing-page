@@ -222,7 +222,7 @@ body {
 /* Footer */
 .footer {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--secondary-color);
   padding: 60px 0 20px;
 }
 
@@ -248,7 +248,7 @@ body {
 }
 
 .footer-section a {
-  color: white;
+  color: var(--secondary-color);
   text-decoration: none;
   transition: var(--transition);
 }
@@ -263,7 +263,7 @@ body {
 }
 
 .social-icons a {
-  color: white;
+  color: var(--secondary-color);
   transition: var(--transition);
 }
 
@@ -276,6 +276,7 @@ body {
   padding-top: 40px;
   margin-top: 40px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--secondary-color);
 }
 
 /* Media Queries */
