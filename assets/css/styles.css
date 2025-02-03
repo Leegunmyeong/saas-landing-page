@@ -271,6 +271,67 @@ body {
   color: var(--accent-color);
 }
 
+/* 🔹 다크 모드에서 footer 스타일 수정 */
+[data-theme="dark"] .footer {
+  background-color: #f5f5f5; /* 배경을 밝게 설정 */
+  color: black; /* 텍스트 검은색 */
+}
+
+[data-theme="dark"] .footer-section a {
+  color: black; /* 링크 검은색 */
+}
+
+[data-theme="dark"] .footer-section a:hover {
+  color: gray; /* 링크 hover 시 회색 */
+}
+
+[data-theme="dark"] .footer .social-icons a {
+  color: black; /* 아이콘 검은색 */
+}
+
+[data-theme="dark"] .footer .social-icons a:hover {
+  color: gray;
+}
+
+/* 다크 모드에서 SVG 아이콘 색상 */
+[data-theme="dark"] .footer .social-icons svg {
+  fill: black;
+}
+
+/* 🔹 다크 모드에서 "Join Our Community" 섹션 수정 */
+[data-theme="dark"] .newsletter {
+  background-color: #1a1a1a; /* 배경색 어둡게 */
+  color: white; /* 텍스트 흰색 */
+}
+
+/* 🔹 다크 모드에서 이메일 입력 필드 수정 */
+[data-theme="dark"] .subscribe-form input {
+  background-color: #333; /* 입력 필드 배경색 */
+  color: white; /* 입력 텍스트 색상 */
+  border: 2px solid #ccc; /* 입력 필드 테두리 추가 */
+  padding: 15px;
+  border-radius: 30px;
+  font-size: 1rem;
+}
+
+/* 🔹 다크 모드에서 이메일 입력 필드 placeholder 색상 조정 */
+[data-theme="dark"] .subscribe-form input::placeholder {
+  color: #bbb; /* placeholder 색상 */
+  opacity: 1; /* 크롬 브라우저에서 흐려지는 문제 방지 */
+}
+
+/* 🔹 다크 모드에서 "Subscribe" 버튼 조정 */
+[data-theme="dark"] .subscribe-btn {
+  background-color: var(--accent-color); /* 버튼 색상 유지 */
+  color: white;
+  border: 2px solid white; /* 버튼 테두리 추가 */
+}
+
+/* 다크 모드에서 이미지 아이콘 색상 반전 */
+[data-theme="dark"] .footer .social-icons img {
+  filter: invert(1);
+}
+
 .footer-bottom {
   text-align: center;
   padding-top: 40px;
