@@ -14,10 +14,10 @@
             <h1 class="logo">LUXE</h1>
             <nav class="nav">
                 <ul>
-                    <li><a href="#new-arrivals">New Arrivals</a></li>
-                    <li><a href="#trending">Trending</a></li>
+                    <li><a href="#home">Home</a></li>
                     <li><a href="#collections">Collections</a></li>
-                    <li><a href="#sale">Sale</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#new">New Arrivals</a></li>
                 </ul>
             </nav>
             <div class="header-actions">
@@ -28,44 +28,119 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Elevate Your Style</h1>
-            <p>Discover our curated collection of premium fashion essentials</p>
-            <div class="hero-buttons">
-                <button class="primary-btn">Shop Women</button>
-                <button class="secondary-btn">Shop Men</button>
+    <!-- Hero Slider -->
+    <section class="hero-slider" id="home">
+        <div class="slide-container">
+            <div class="slide active">
+                <div class="slide-content">
+                    <h2 class="animate-text">Luxury Fashion</h2>
+                    <p class="animate-text delay-1">Discover the latest trends in fashion</p>
+                    
+                </div>
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1920&h=1080')"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-content">
+                    <h2>Premium Style</h2>
+                    <p>Elevate your wardrobe with our premium collection</p>
+                    
+                </div>
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1445205170230-053b83016050?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=1920&h=1080')"></div>
+            </div>
+        </div>
+        <button class="slide-arrow prev"><span class="material-icons">arrow_back</span></button>
+        <button class="slide-arrow next"><span class="material-icons">arrow_forward</span></button>
+    </section>
+
+    <!-- Collections -->
+    <section id="collections" class="collections">
+        <div class="container">
+            <h2 class="section-title">Our Collections</h2>
+            <div class="collection-grid">
+                <div class="collection-item" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&h=800" alt="Women's Collection">
+                    <div class="collection-content">
+                        <h3>Women's Collection</h3>
+                        <p>Elegant designs for modern women</p>
+                        <a href="#" class="collection-link">View Collection</a>
+                    </div>
+                </div>
+                <div class="collection-item" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1490367532201-b9bc1dc483f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&h=800" alt="Men's Collection">
+                    <div class="collection-content">
+                        <h3>Men's Collection</h3>
+                        <p>Sophisticated styles for modern men</p>
+                        <a href="#" class="collection-link">View Collection</a>
+                    </div>
+                </div>
+                <div class="collection-item" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1523206489230-c012c64b2b48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=600&h=800" alt="Accessories">
+                    <div class="collection-content">
+                        <h3>Accessories</h3>
+                        <p>Complete your look</p>
+                        <a href="#" class="collection-link">View Collection</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Categories -->
-    <section id="new-arrivals" class="featured">
-        <h2>New Arrivals</h2>
-        <div class="category-grid">
-            <div class="category-card">
-                <img src="/api/placeholder/400/500" alt="Casual Wear">
-                <div class="category-content">
-                    <h3>Casual Wear</h3>
-                    <p>Starting from $29.99</p>
-                    <button class="shop-btn">Shop Now</button>
+    <!-- Featured Products -->
+    <section id="featured" class="featured">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card" data-aos="fade-up">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&h=500" alt="Product">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Watch</h3>
+                        <p class="price">$299.99</p>
+                    </div>
                 </div>
-            </div>
-            <div class="category-card">
-                <img src="/api/placeholder/400/500" alt="Formal Collection">
-                <div class="category-content">
-                    <h3>Formal Collection</h3>
-                    <p>Starting from $49.99</p>
-                    <button class="shop-btn">Shop Now</button>
+                <div class="product-card" data-aos="fade-up">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&h=500" alt="Product">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Designer Shoes</h3>
+                        <p class="price">$199.99</p>
+                    </div>
                 </div>
-            </div>
-            <div class="category-card">
-                <img src="/api/placeholder/400/500" alt="Accessories">
-                <div class="category-content">
-                    <h3>Accessories</h3>
-                    <p>Starting from $19.99</p>
-                    <button class="shop-btn">Shop Now</button>
+                <div class="product-card" data-aos="fade-up">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&h=500" alt="Product">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Leather Bag</h3>
+                        <p class="price">$399.99</p>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&h=500" alt="Product">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Smart Watch</h3>
+                        <p class="price">$249.99</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -73,46 +148,55 @@
 
     <!-- Newsletter Section -->
     <section class="newsletter">
-        <div class="newsletter-content">
-            <h2>Join Our Community</h2>
-            <p>Subscribe to receive updates on new arrivals and special promotions</p>
-            <form class="subscribe-form">
-                <input type="email" placeholder="Enter your email address">
-                <button type="submit" class="subscribe-btn">Subscribe</button>
-            </form>
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <h2>Join Our Newsletter</h2>
+                <p>Subscribe to receive updates about new products and special offers</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About LUXE</h3>
-                <ul>
-                    <li><a href="#">Our Story</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Sustainability</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Customer Service</h3>
-                <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Shipping & Returns</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Connect With Us</h3>
-                <div class="social-icons">
-                    <a href="#"><span class="material-icons">photo_camera</span></a>
-                    <a href="#"><span class="material-icons">facebook</span></a>
-                    <a href="#"><span class="material-icons">alternate_email</span></a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About LUXE</h3>
+                    <p>Premium fashion and accessories for the modern lifestyle.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#featured">Featured</a></li>
+                        <li><a href="#new">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><span class="material-icons">location_on</span> 123 Fashion St, NY</li>
+                        <li><span class="material-icons">phone</span> +1 234 567 890</li>
+                        <li><span class="material-icons">email</span> info@luxe.com</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><span class="material-icons">facebook</span></a>
+                        <a href="#"><span class="material-icons">instagram</span></a>
+                        <a href="#"><span class="material-icons">twitter</span></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 LUXE. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LUXE. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
